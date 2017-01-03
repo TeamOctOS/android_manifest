@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="bionic" name="android_bionic" remote="octos" groups="pdk" />
+
+  <project path="build/make" name="android_build" remote="octos" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="octos" >
+      <linkfile src="root.bp" dest="Android.bp" />
+      <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="development" name="android_development" remote="octos" groups="pdk-cw-fs,pdk-fs" />
+
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="octos" />
+  <project path="external/exfat" name="android_external_exfat" remote="octos" />
+  <project path="external/fuse" name="android_external_fuse" remote="octos" />
+  <project path="external/libnetfilter_conntrack" name="android_external_libnetfilter_conntrack" remote="octos" />
+  <project path="external/libnfnetlink" name="android_external_libnfnetlink" remote="octos" />
+  <project path="external/mksh" name="android_external_mksh" remote="octos" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="octos" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="octos" />
+  <project path="external/selinux" name="android_external_selinux" remote="octos" />
+  <project path="external/toybox" name="android_external_toybox" remote="octos" />
+
+  <project path="frameworks/av" name="android_frameworks_av" remote="octos" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="octos" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="octos" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="octos" />
+
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="octos" />
+  <project path="hardware/invensense" name="android_hardware_invensense" remote="octos" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="octos" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="octos" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="octos" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="octos" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="octos" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="octos" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="octos" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="octos" />
+
+  <project path="manifest" name="android_manifest" remote="octos" />
+
+  <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="octos" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="octos" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="octos" />
+  <project path="packages/apps/MusicFX" name="android_packages_apps_MusicFX" remote="octos" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="octos" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="octos" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="octos" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="octos" />
+
+  <project path="system/bt" name="android_system_bt" remote="octos" />
+  <project path="system/core" name="android_system_core" remote="octos" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="octos" />
+  <project path="system/media" name="android_system_media" remote="octos" />
+  <project path="system/nfc" name="android_system_nfc" remote="octos" />
+  <project path="system/netd" name="android_system_netd" remote="octos" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="octos" />
+  <project path="system/vold" name="android_system_vold" remote="octos" />
+
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="octos" />
+
+</manifest>

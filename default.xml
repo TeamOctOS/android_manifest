@@ -9,11 +9,11 @@
              review="https://android-review.googlesource.com/"
              revision="refs/tags/android-8.0.0_r17" />
 
-   <remote  name="teamoctos"
+   <remote  name="octos"
             fetch="https://github.com/TeamOctOS"
             review="http://review.teamoctos.com" />
 
-   <remote  name="teamoctos-devices"
+   <remote  name="octos-devices"
             fetch="https://github.com/TeamOctOS-Devices"
             review="http://review.teamoctos.com" />
 
@@ -613,7 +613,10 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- Team OctOS -->
-  <project path="manifest" name="android_manifest" remote="teamoctos" />
+  <!-- Remove unused/forked AOSP Projects -->
+  <include name="remove.xml" />
+
+  <!-- Add Octos Repo -->
+  <include name="octos_default.xml" />
 
 </manifest>
