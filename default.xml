@@ -613,4 +613,7 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <!-- Team OctOS -->
+  <project path="manifest" name="android_manifest" remote="teamoctos" />
+
 </manifest>
