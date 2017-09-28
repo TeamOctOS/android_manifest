@@ -33,9 +33,9 @@
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" remote="aosp" />
-  <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
-    <linkfile src="root.bp" dest="Android.bp" remote="aosp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" remote="aosp" />
+  <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="art" name="platform/art" groups="pdk" remote="aosp" />
   <project path="bionic" name="platform/bionic" groups="pdk" remote="aosp" />
@@ -612,5 +612,9 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" remote="aosp" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+
+  <!-- Team OctOS -->
+  <project path="manifest" name="android_manifest" remote="teamoctos" />
+  <!-- Team OctOS -->
 
 </manifest>
