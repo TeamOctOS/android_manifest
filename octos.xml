@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
   <project path="build/make" name="android_build" groups="pdk" remote="octos" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -8,27 +9,24 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-    </project>
+  </project>
   <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="octos" />
-    <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="octos" >
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="octos" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="bionic" name="android_bionic" groups="pdk" remote="octos" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="octos" />
   <project path="development" name="android_development" groups="pdk-cw-fs,pdk-fs" remote="octos" />
-  <project path="external/connectivity" name="android_external_connectivity" groups="pdk" remote="octos" />
-  <project path="external/ebtables" name="android_external_ebtables" groups="pdk" remote="octos" />
   <project path="external/exfat" name="android_external_exfat" remote="octos" />
   <project path="external/fuse" name="android_external_fuse" remote="octos" />
   <project path="external/htop" name="android_external_htop" remote="octos" />
-  <project path="external/json-c" name="android_external_json-c" remote="octos" />
   <project path="external/libncurses" name="android_external_libncurses" remote="octos" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="octos" />
   <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="octos" />
   <project path="external/nano" name="android_external_nano" remote="octos" />
-  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="octos" />
   <project path="external/selinux" name="android_external_selinux" groups="pdk" remote="octos" />
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="octos" />
   <project path="external/toybox" name="android_external_toybox" groups="pdk" remote="octos" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="octos" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="octos" />

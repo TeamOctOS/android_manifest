@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch=".." />
-
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
-           review="https://android-review.googlesource.com/"
+           review="https://android-review.googlesource.com"
            revision="refs/tags/android-8.0.0_r17" />
+
+  <remote  name="github"
+           fetch=".." />
 
   <remote  name="octos"
            fetch="https://github.com/TeamOctOS"
