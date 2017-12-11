@@ -20,8 +20,9 @@
 
   <project path="development" name="android_development" groups="pdk-cw-fs,pdk-fs" remote="octos" />
 
+  <project path="device/octos/sepolicy" name="android_device_octos_sepolicy" remote="octos-devices" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="octos-devices" />
-
+  
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="octos" />
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="octos" />
   <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="octos" />
