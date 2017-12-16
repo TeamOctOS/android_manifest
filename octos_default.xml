@@ -18,6 +18,8 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="octos" />
+
   <project path="development" name="android_development" groups="pdk-cw-fs,pdk-fs" remote="octos" />
 
   <project path="device/octos/sepolicy" name="android_device_octos_sepolicy" remote="octos-devices" />
