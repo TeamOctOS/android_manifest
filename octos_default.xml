@@ -2,7 +2,7 @@
 <manifest>
 
   <project path="bionic" name="android_bionic" remote="octos" groups="pdk" />
-
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="octos" />
   <project path="build/make" name="android_build" groups="pdk" remote="octos" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
