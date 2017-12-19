@@ -17,6 +17,9 @@
            fetch="https://github.com/TeamOctOS-Devices"
            review="http://review.teamoctos.com" />
 
+  <remote  name="octoblobs"
+           fetch="https://github.com/OctoBlobs" />
+
   <default revision="refs/heads/oreo"
            remote="github"
            sync-c="true"
